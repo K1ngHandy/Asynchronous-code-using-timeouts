@@ -33,8 +33,8 @@
     function printNumbers() {
       for (let i = 0; i < 6; i++) {
           setTimeout( () => console.log(i), 2000 );
-          };
-        }
+        };
+      }
     
     printNumbers();
 
@@ -46,7 +46,12 @@
     clearInterval: https://developer.mozilla.org/en-US/docs/Web/API/clearInterval
     */
 
-    //ENTER YOUR CODE HERE
+    function countdown(number) {
+      for (let i = number; i >= 0; i--) {
+        setInterval( () => console.log(i, '!'), 1200 );
+      };
+    }
+    countdown(3);
 
     /* 
     PROBLEM 5 (DEBUGGING): The code below should log a message to the console every 2 seconds, starting from 0 and going up to 10. However, the code below does not function properly. Run the snippet below to see the problem, and fix the code so that the correct numbers print to the console.
